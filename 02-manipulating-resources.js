@@ -486,3 +486,24 @@ function deleteAuthor(id) {
   const authorIdx = authors.indexOf(author);
   authors.splice(authorIdx, 1);
 }
+
+
+/*
+
+GET /blogs                -> Just render the blogs array
+GET /blogs/:id            -> getBlogById()
+POST /blogs               -> addBlog()
+POST /blogs/:id           -> editBlog()
+POST /blogs/:id/delete    -> deleteBlog()
+
+GET /authors              -> Just render the authors array
+GET /authors/:id          -> getAuthorById() (Might also involve getBlogsForAuthor())
+POST /authors             -> addAuthor()
+POST /authors/:id         -> editAuthor()
+POST /authors/:id/delete  -> deleteAuthor()
+
+Bonus:
+
+GET /authors/:id/blogs    -> getBlogsForAuthor()
+
+*/
